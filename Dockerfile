@@ -1,8 +1,7 @@
 FROM ubuntu:13.04
-#FROM centos:centos7.1.1503
-#RUN echo "deb http://archive.ubuntu.com/ubuntu precise main universe" > /etc/apt/sources.list
-# RUN apt-get update
-# RUN apt-get upgrade -y
+RUN echo "deb http://archive.ubuntu.com/ubuntu precise main universe" > /etc/apt/sources.list
+RUN apt-get update
+RUN apt-get upgrade -y
 ### ssh apache2 supervisor
 
 RUN apt-get install -y --force-yes perl-base=5.14.2-6ubuntu2
