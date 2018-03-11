@@ -1,9 +1,9 @@
 version: '2'
 
 services:
-        httpd:
-                build: .
-                ports:
-                  - "8081:80" 
-                  - "23:22" 
-                restart: always
+  httpd:
+    build: httpd/.
+    ports:
+     - "8081:80" 
+     - "23:22" 
+    restart: always
