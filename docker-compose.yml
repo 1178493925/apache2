@@ -1,8 +1,12 @@
 version: '2'
 
 services:
-  httpd:
-    build: httpd/.
+  apc:
+    build: httpd
+    expose:
+     - 80
+
+
     ports:
      - "8081:80" 
      - "23:22" 
